@@ -1,0 +1,355 @@
+/* Reset dan Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header / Navbar */
+header {
+  background-color: #8B4513; /* Merah bata */
+  color: white;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #DAA520; /* Kuning kunyit */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #228B22, #654321); /* Hijau daun ke coklat kayu */
+  color: white;
+  padding-top: 80px; /* Offset for fixed header */
+}
+
+.hero-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #DAA520;
+  color: white;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #B8860B;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 55%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Tentang Kami */
+.about {
+  padding: 4rem 0;
+  background-color: white;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 2rem;
+  color: #8B4513;
+}
+
+/* Menu Unggulan */
+.menu {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #8B4513;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  padding: 1rem;
+  color: #8B4513;
+}
+
+.menu-item p {
+  padding: 0 1rem;
+  color: #666;
+}
+
+/* Galeri Kuliner */
+.gallery {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #8B4513;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimoni Pelanggan */
+.testimonials {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #8B4513;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card cite {
+  color: #8B4513;
+  font-weight: 600;
+}
+
+/* Formulir Kontak */
+.contact {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #8B4513;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+form button {
+  align-self: flex-start;
+}
+
+/* Footer */
+footer {
+  background-color: #8B4513;
+  color: white;
+  padding: 4rem 0 2rem;
+}
+
+.footer-section {
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: #DAA520;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #DAA520;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #DAA520;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 120px 0 4rem;
+  }
+
+  nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #8B4513;
+      display: none; /* Sederhana, tanpa JS toggle */
+  }
+
+  .menu-grid, .gallery-grid, .testimonial-grid {
+      grid-template-columns: 1fr;
+  }
+
+  footer .container {
+      display: block;
+  }
+}
+
+/* Pola Batik Sederhana */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%238B4513" opacity="0.1"/></svg>');
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: -1;
+}
